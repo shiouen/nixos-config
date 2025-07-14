@@ -21,7 +21,7 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # Configure user
+  # Define a user account. Don't forget to set a password with ‘passwd’. ???
   users.users.olivier = {
     description = "Olivier";
     home = "/home/olivier";

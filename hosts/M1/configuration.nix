@@ -68,21 +68,6 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.olivier = {
-    isNormalUser = true;
-    description = "Olivier";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      brave
-      git
-      jetbrains.idea-ultimate
-      nixd
-      python313
-      zulu24
-    ];
-  };
-
   # Install firefox.
   programs.firefox.enable = false;
 
